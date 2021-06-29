@@ -1,0 +1,23 @@
+header {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 9px;
+  background-color: rgba(21, 144, 201, 0.884);
+  height: 60px;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+#header {
+  width: 220px;
+  li {
+    display: inline-flex;
+    padding: 6px;
+    a {
+      justify-content: space-around;
+      color: aliceblue;
+      font-size: 19px;
+      text-decoration: none;
+    }
+  }
+}

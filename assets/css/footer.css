@@ -1,0 +1,16 @@
+footer {
+  background-color: grey;
+  height: 60px;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around; }
+  footer h3 {
+    color: ghostwhite;
+    padding: 3px; }
+  footer div {
+    padding: 21px; }
+    footer div a {
+      color: ghostwhite;
+      text-decoration: none;
+      font-size: 20px;
+      margin: 10px; }
