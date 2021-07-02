@@ -1,9 +1,9 @@
 <header>
-  <h1>CODEIAL</h1>
+  <a href="/" id="header-home">CODEIAL</a>
   <ul id="header">
     <% if(locals.user) {%>
     <li>
-      <a href="/users/profile"> <%= user.name %> </a>
+      <a href="/users/profile/<%= user.id %>"> <%= user.name %> </a>
     </li>
     <li>
       <a href="/users/sign-out">Sign out</a>

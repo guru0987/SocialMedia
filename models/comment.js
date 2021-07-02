@@ -1,22 +1,23 @@
 const mongoose = require('mongoose');
 
 
-const commentSchema = mnogoose.Schema({
+const commentSchema = mongoose.Schema({
     content: {
-        type: String, required: true
+        type: String,
+        required: true
     },
     //comment belong to user
     user: {
-        type: moongose.Schema.Type.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
     },
     post: {
-        type: moongose.Schema.Type.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: 'Post'
     }
 }, {
     timestamps: true
 });
 
-const Commment = mongoose.model('Comment', commentSchema);
+const Comment = mongoose.model('Comment', commentSchema);
 module.exports = Comment;
